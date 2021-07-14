@@ -21,9 +21,9 @@ const SceneControl = () => {
                 />
             </GizmoHelper>
             <OrbitControls ref={controlRef} enableDamping={false} />
-            <gridHelper args={[30, 200]} rotation={new Euler(Math.PI / 2, 0, 0)} />
-            <gridHelper args={[30, 200]}/>
-            <gridHelper args={[30, 200]} rotation={new Euler(Math.PI / 2, 0, 33)} />
+            <gridHelper scale={[1,1,1]} args={[30, 200, "black", "grey"]} rotation={new Euler(Math.PI / 2, 0, 0)} />
+            <gridHelper scale={[1,1,1]} args={[30, 200, "black", "grey"]} />
+            <gridHelper scale={[1,1,1]} args={[30, 200, "black", "grey"]} rotation={new Euler(Math.PI / 2, 0, 33)} />
         </>
     );
 };
